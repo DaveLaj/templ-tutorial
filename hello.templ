@@ -3,3 +3,17 @@ package main
 templ hello(name string) {
 	<div>Hello, { name }</div>
 }
+
+templ header() {
+	<head>
+		<title>Hello Chumps!</title>
+	</head>
+}
+templ page() {
+	<html>
+		@header()
+		<body>
+			@hello("Dave")
+		</body>
+	</html>
+}

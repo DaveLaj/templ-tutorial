@@ -17,9 +17,9 @@ func main() {
 	defer logfile.Close()
 
 	log.SetOutput(logfile)
-	component := hello("Dave")
+	pageComponent := page()
 
-	http.Handle("/", templ.Handler(component))
+	http.Handle("/", templ.Handler(pageComponent))
 
 	log.Println("App running on http://localhost:8080")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
