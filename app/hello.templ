@@ -1,4 +1,6 @@
-package main
+package app
+
+import "templ-tutorial/buttons"
 
 templ hello(name string) {
 	<div>Hello, { name }</div>
@@ -9,11 +11,12 @@ templ header() {
 		<title>Hello Chumps!</title>
 	</head>
 }
-templ page() {
+templ Page() {
 	<html>
 		@header()
 		<body>
 			@hello("Dave")
+			@buttons.Button("Click me!")
 		</body>
 	</html>
 }
