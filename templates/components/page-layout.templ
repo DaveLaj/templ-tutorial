@@ -1,0 +1,12 @@
+package components
+
+templ PageLayout(content templ.Component) {
+    <!DOCTYPE html>
+    <html>
+        @header()
+        <body>
+            @content
+        </body>
+        @footer()
+    </html>
+}

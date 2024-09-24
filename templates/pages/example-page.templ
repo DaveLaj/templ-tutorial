@@ -1,0 +1,14 @@
+package pages
+
+import "templ-tutorial/templates/components"
+// Content for example page
+templ ExamplePage() {
+    @components.PageLayout(ExamplePageContent())
+}
+
+templ ExamplePageContent() {
+    <div class="container d-flex justify-content-center align-items-center">
+        <h1>Example Page</h1>
+        <p>This is an example page!</p>
+    </div>
+}

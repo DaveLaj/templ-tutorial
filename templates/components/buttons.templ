@@ -1,0 +1,7 @@
+package components
+
+templ button(text string, isTestClass bool) {
+    <button type="button" class={"btn", templ.KV("testclass", isTestClass)}> 
+        { text }
+    </button>
+}
