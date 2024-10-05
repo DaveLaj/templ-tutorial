@@ -5,10 +5,10 @@ templgen:
 	templ generate
 
 run: lint
-	go run main/main.go
+	go run cmd/main/main.go
 
 build: lint
-	go build -o bin/main.exe main/main.go
+	go build -o cmd/bin/main.exe main/main.go
 
 templwatch: 
 	templ generate --watch --proxy="http://localhost:8080" --cmd="make run"

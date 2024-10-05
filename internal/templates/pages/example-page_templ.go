@@ -8,7 +8,7 @@ package pages
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-import "templ-tutorial/templates/components"
+import "templ-tutorial/internal/templates/components"
 
 // Content for example page
 func ExamplePage() templ.Component {

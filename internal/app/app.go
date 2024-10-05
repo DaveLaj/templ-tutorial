@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 	"os"
-	"templ-tutorial/templates/pages"
-	"templ-tutorial/utils"
+	"templ-tutorial/internal/templates/pages"
+	"templ-tutorial/internal/utils"
 
 	"github.com/a-h/templ"
 )
