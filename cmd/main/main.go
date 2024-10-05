@@ -1,6 +1,6 @@
 package main
 
-import "templ-tutorial/app"
+import "templ-tutorial/internal/app"
 
 func main() {
 	app.Start()
